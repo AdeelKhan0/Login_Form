@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Making</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e796aed59c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <i class="fa-solid fa-paper-plane"></i>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter Your Name" id="contact-name" onkeyup="validation()">
+                <span id="input-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Phone No</label>
+                <input type="tel" placeholder="92 123 456 789" id="contact-no" onkeyup="validationN()">
+                <span id="phone-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Email id</label>
+                <input type="text" placeholder="Enter Email adress" id="contact-Email" onkeyup="validationE()">
+                <span id="email-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Enter Message</label>
+                <textarea rows="5" placeholder="Enter Your Message" id="contact-msg" onkeyup="validationmsg()"></textarea>
+                <span id="msg-error"></span>
+            </div>
+
+            <button onclick="return validateform()">Submit</button>
+            <span id="submit-error"></span>
+
+        </form>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
